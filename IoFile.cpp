@@ -15,6 +15,17 @@ int main(){
 
     // unlimited loop untuk menulis
     while (true) {
-        
+        cout << "-";
+        // mendafatkan setiap karakter dalam satu baris
+        getline(cin, baris);
+        //loop akan berhenti jika anda memasukan karakter q
+        if (baris == "q") break;
+        // menulis dan memasukan nilai dari 'baris' kedaam file
+        outfile << baris << endl;
     }
+    // selesai dalam menulis sekarang tutup filenya
+    outfile.close();
+
+    // membuka file dalam mode membaca
+    ifstream infile;
 }
