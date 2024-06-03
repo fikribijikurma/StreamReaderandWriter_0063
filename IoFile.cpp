@@ -28,4 +28,13 @@ int main(){
 
     // membuka file dalam mode membaca
     ifstream infile;
+    // memnunjuk kesebuah file
+    infile.open("contohfile.txt");
+
+    cout << endl << ">= Membuka dan membaca file " << endl;
+    // jika file ada maka
+    if (infile.is.open()){
+        // melakukan perulangan setiap baris
+        while (getline(infile, baris))
+    }
 }
